@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L9o-ZB-kw8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1gw-q7-utF">
+            <objects>
+                <viewController id="VSL-wx-X66" customClass="ViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nch-W1-iXh"/>
+                        <viewControllerLayoutGuide type="bottom" id="GKQ-sL-shT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QQi-2K-fTr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteLock" translatesAutoresizingMaskIntoConstraints="NO" id="x58-0L-GDQ">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="6zO-La-JXJ"/>
+                                    <constraint firstAttribute="width" constant="200" id="HAs-Gk-Uvf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L O C K E D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="xbs-5F-b0q">
+                                <rect key="frame" x="70" y="532" width="460" height="48"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="uaa-sH-aZc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="x58-0L-GDQ" firstAttribute="centerX" secondItem="QQi-2K-fTr" secondAttribute="centerX" id="2QL-df-D66"/>
+                            <constraint firstItem="GKQ-sL-shT" firstAttribute="top" secondItem="xbs-5F-b0q" secondAttribute="bottom" constant="20" id="Zqc-eJ-ScK"/>
+                            <constraint firstItem="xbs-5F-b0q" firstAttribute="leading" secondItem="QQi-2K-fTr" secondAttribute="leadingMargin" constant="50" id="mwQ-76-qoX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xbs-5F-b0q" secondAttribute="trailing" constant="50" id="q4s-eu-kTm"/>
+                            <constraint firstItem="x58-0L-GDQ" firstAttribute="centerY" secondItem="QQi-2K-fTr" secondAttribute="centerY" id="yz4-MM-yrs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tM4-pj-YgF"/>
+                    <connections>
+                        <outlet property="imageView" destination="x58-0L-GDQ" id="dBR-Sv-Jbf"/>
+                        <outlet property="lockedStatusLabel" destination="xbs-5F-b0q" id="oe8-am-NJD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOi-Hz-QuG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3369" y="-286"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x8u-5Z-9cw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L9o-ZB-kw8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gvu-pe-3YM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VSL-wx-X66" kind="relationship" relationship="rootViewController" id="AAK-ve-H88"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="duX-Uo-B2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2557" y="-286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WhiteLock" width="262" height="390"/>
+    </resources>
+</document>
